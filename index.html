@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🌿 HIASAN SUDUT -->
+  <img src="https://i.ibb.co/X4WbYHZ/floral-corner.png" class="corner top-left" alt="corner decoration">
+  <img src="https://i.ibb.co/X4WbYHZ/floral-corner.png" class="corner top-right" alt="corner decoration">
+  <img src="https://i.ibb.co/X4WbYHZ/floral-corner.png" class="corner bottom-left" alt="corner decoration">
+  <img src="https://i.ibb.co/X4WbYHZ/floral-corner.png" class="corner bottom-right" alt="corner decoration">
+
+  <!-- HALAMAN PEMBUKA -->
+  <section id="cover">
+    <div class="cover-content fade-in">
+      <img src="https://i.ibb.co/nRDZ5r1/couple.jpg" alt="Foto Mempelai" class="cover-photo" />
+      <h1 class="cover-title">Zahra & Rian</h1>
+      <p class="cover-date">20 Desember 2025</p>
+
+      <p class="cover-invitation">Kepada Yth.</p>
+      <p id="namaTamuCover" class="cover-nama">Tamu Undangan</p>
+
+      <button id="openButton" class="btn-open">💌 Buka Undangan</button>
+    </div>
+  </section>
+
+  <!-- ISI UNDANGAN -->
+  <section id="invitation" class="hidden fade">
+    <div class="overlay">
+      <h1>Undangan Pernikahan</h1>
+      <h2 id="namaMempelai">ppp & qqq</h2>
+
+      <div class="divider"></div>
+      <p>Dengan penuh rasa syukur, kami mengundang:</p>
+      <div class="nama-tamu" id="namaTamu">Tamu Undangan</div>
+
+      <div class="photo-section">
+        <img src="https://i.ibb.co/0KQQFMC/wedding-photo.jpg" alt="Foto Mempelai" class="wedding-photo">
+      </div>
+
+      <p class="tanggal">Sabtu, 20 Desember 2025</p>
+      <p class="lokasi">Hotel Grand Garden, Jakarta</p>
+
+      <a href="#" id="btnMaps" target="_blank" class="btn-maps">📍 Lihat Lokasi di Google Maps</a>
+
+      <div class="divider"></div>
+
+      <!-- 💝 NOMOR REKENING -->
+      <div class="gift-section">
+        <h3>Hadiah Pernikahan</h3>
+        <p>Terima kasih atas doa dan perhatian Anda.  
+        Bagi yang ingin memberikan tanda kasih dapat melalui:</p>
+        <div class="rekening">
+          <p><strong>BCA</strong> - 1234567890 a.n. Zahra Putri</p>
+          <p><strong>Mandiri</strong> - 9876543210 a.n. Rian Saputra</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- 💬 UCAPAN SELAMAT -->
+      <div class="ucapan-section">
+        <h3>Ucapan & Doa</h3>
+        <form id="ucapanForm">
+          <input type="text" id="namaUcapan" placeholder="Nama Anda" required>
+          <textarea id="pesanUcapan" placeholder="Tulis ucapan Anda..." required></textarea>
+          <button type="submit" class="btn-kirim">Kirim Ucapan</button>
+        </form>
+        <div id="daftarUcapan"></div>
+      </div>
+
+<div class="divider"></div>
+
+        <!-- ✅ KONFIRMASI KEHADIRAN -->
+        <div class="rsvp-section">
+          <h3>Konfirmasi Kehadiran</h3>
+          <form id="rsvpForm">
+            <input type="text" id="namaRsvp" placeholder="Nama Anda" required>
+            <select id="statusRsvp" required>
+              <option value="">Pilih Kehadiran</option>
+              <option value="Hadir">✅ Akan Hadir</option>
+              <option value="Tidak Hadir">❌ Tidak Bisa Hadir</option>
+            </select>
+            <input type="number" id="jumlahTamu" placeholder="Jumlah Tamu (opsional)">
+            <textarea id="catatanRsvp" placeholder="Catatan tambahan (opsional)"></textarea>
+            <button type="submit" class="btn-kirim">Kirim Konfirmasi</button>
+          </form>
+          <div id="daftarRsvp"></div>
+        </div>
+
+      <footer>
+        <p>Merupakan kebahagiaan besar bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+        <p>Terima kasih atas doa dan kehadirannya ❤️</p>
+      </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

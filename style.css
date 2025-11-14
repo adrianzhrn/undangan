@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f6f2;
+  color: #444;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* 🌸 HIASAN SUDUT */
+.corner {
+  position: fixed;
+  width: 120px;
+  opacity: 0.8;
+  z-index: 1;
+}
+.top-left { top: 0; left: 0; transform: rotate(0deg); }
+.top-right { top: 0; right: 0; transform: rotateY(180deg); }
+.bottom-left { bottom: 0; left: 0; transform: rotateX(180deg); }
+.bottom-right { bottom: 0; right: 0; transform: rotate(180deg); }
+
+/* COVER */
+#cover {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
+              url('https://i.ibb.co/FbnkS1b/cover-bg.jpg') center/cover no-repeat;
+}
+
+.cover-content {
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.cover-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.cover-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8em;
+  margin: 20px 0 10px;
+}
+
+.cover-date {
+  font-size: 1.1em;
+}
+
+.cover-invitation {
+  margin-top: 20px;
+}
+
+.cover-nama {
+  font-size: 1.4em;
+  color: #ffd;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.btn-open {
+  background-color: #b08a5b;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1em;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-open:hover {
+  background-color: #9c774a;
+  transform: scale(1.05);
+}
+
+/* TRANSISI HALUS */
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.fade.show {
+  opacity: 1;
+}
+
+/* ISI UNDANGAN */
+.hidden { display: none; }
+
+.overlay {
+  background: rgba(255, 255, 255, 0.97);
+  min-height: 100vh;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  color: #b08a5b;
+  font-size: 3em;
+}
+
+.nama-tamu {
+  font-size: 1.3em;
+  color: #b08a5b;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.photo-section {
+  margin: 25px 0;
+}
+
+.wedding-photo {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-maps {
+  display: inline-block;
+  background-color: #b08a5b;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.btn-maps:hover {
+  background-color: #a07848;
+  transform: scale(1.05);
+}
+
+/* 💝 NOMOR REKENING */
+.gift-section {
+  margin-top: 30px;
+}
+.gift-section h3 {
+  color: #b08a5b;
+  font-family: 'Poppins', sans-serif;
+}
+.rekening {
+  background: #fff8f2;
+  border: 1px solid #e6d4bc;
+  border-radius: 10px;
+  padding: 15px;
+  display: inline-block;
+  text-align: left;
+}
+
+/* 💬 UCAPAN */
+.ucapan-section {
+  margin-top: 40px;
+  text-align: center;
+}
+.ucapan-section h3 {
+  color: #b08a5b;
+}
+#ucapanForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ucapanForm input, #ucapanForm textarea {
+  width: 90%;
+  max-width: 400px;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins';
+}
+.btn-kirim {
+  background-color: #b08a5b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+#daftarUcapan {
+  margin-top: 20px;
+  max-width: 500px;
+  text-align: left;
+  margin-inline: auto;
+}
+.ucapan-item {
+  background: #fff8f2;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 8px 0;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.rsvp-section {
+  margin-top: 40px;
+  text-align: center;
+}
+.rsvp-section h3 {
+  color: #b08a5b;
+  margin-bottom: 10px;
+}
+#rsvpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#rsvpForm input,
+#rsvpForm select,
+#rsvpForm textarea {
+  width: 90%;
+  max-width: 400px;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins';
+}
+#daftarRsvp {
+  margin-top: 20px;
+  max-width: 500px;
+  text-align: left;
+  margin-inline: auto;
+}
+.rsvp-item {
+  background: #fff8f2;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-left: 4px solid #b08a5b;
+}
+
