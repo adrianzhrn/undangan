@@ -1,5 +1,5 @@
 // URL Web App dari Google Apps Script kamu
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwRXqc9RzQKUE7bxqWcyZWL0-3ngTBgNBrReOERVO8/dev";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzctYsYLQmqtoDX2FKlKl6nI2vF8MhP1K8X76zzdtkRkoBOUqzt-Ph_8f2L_vSWtSTc/exec";
 
 // Ambil parameter ?to= dari URL
 const urlParams = new URLSearchParams(window.location.search);
